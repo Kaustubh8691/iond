@@ -34,7 +34,7 @@ function Signin({ setUser }) {
         localStorage.setItem("UserID", res.data.UserID);
         localStorage.setItem("UserName", res.data.UserName);
 
-        navigate("/property");
+       alert("successfully login");
       }
     } catch (error) {
       alert(error.response.data.message);
